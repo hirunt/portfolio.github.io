@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-95YN7VTV5H"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-95YN7VTV5H');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thishakya's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3c2cc2a330.js" crossorigin="anonymous"></script>
+</head>
+<body onload="getGreeting();">
+<!-- boot logo container -->
+<div id="boot-logo-container">
+    <img src="images/Smve.gif" alt="Boot Logo">
+</div>      
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark fa-xl" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p id="greeting"></p>
+            <h1>I'm <span> Thishakya </span><br> From Sri Lanka</h1>
+            <p>Undergraduate<p></p>
+        </div>
+    </div>
+
+</div>
+<!--------------about------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/me2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As an undergraduate student specializing in Information and Communication Technology (ICT),<br> 
+                    I bring a dynamic set of skills to the table:
+                    <br>
+                    <ul class="list">
+                        <li>Strong Interpersonal Skills</li>
+                        <li>Effective Teamwork</li>
+                        <li>Organizational Proficiency</li>
+                        <li>Sound Decision-Making</li>
+                        <li>Proven Problem-Solving Abilities
+                    </ul>
+                    My goal is to contribute my time and skills to your organization, leveraging my academic 
+                    background and passion for ICT to help achieve its objectives. I am eager to gain valuable 
+                    working experience and actively contribute to the success of the team.</p><hr>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')"">Certificates</p>
+                    <p class="tab-links" onclick="opentab('education')"">Academic</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>Python-3 | C++ | Java</li>
+                        <li><span>Web Development</span><br>HTML-5 | CSS-3 | PHP | JavaScript</li>
+                        <li><span>Database Management</span><br>MySQL | MangoDB</li>
+                        <li><span>Workplace Essentials</span><br>MS Office | G-Suit | Adobe</li>
+                        <li><span>Communication</span><br>Sinhala & English</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Certificate of Trainee-Full Stack Developer</span><br>University Of Moratuwa
+                            <ol> 
+                                <li>Python for Beginners | <a href="https://open.uom.lk/lms/mod/customcert/verify_certificate.php">Code RItYUzxXnX</a> </li>
+                                <li>Web Design for Beginners | <a href="https://open.uom.lk/lms/mod/customcert/verify_certificate.php">Code VVA9LIpI6H</a> </li>
+                            </ol>
+                        </li>
+                        <br>
+
+                        <li><span>Cisco Networking Academy</span><br>Credly By Pearson
+                            <ol> 
+                                <li>Python Essentials 1 | <a href="https://www.credly.com/badges/dc501792-7a38-4f0c-bb2c-faa9978314a7">Verify</a> </li>
+                                <li>Computer Hardware Basics | <a href="https://www.credly.com/badges/672fb908-cee0-4c35-8307-89233cd0ec5b">Verify</a> </li>
+                                <li>Operating Systems Basics | <a href="https://www.credly.com/badges/991829d6-3fbe-4467-b616-3641ac0003da">Verify</a> </li>
+                            </ol>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Sc (Hons) Computing & Information System (UG)</span><br>Sabaragamuwa University Sri Lanka</li>
+                        <li><span>Diploma in Information Technology (Reading)</span><br>University of Colombo - SOC</li>
+                        <li><span>Diploma in English</span><br>National Institute for Business Management</li>
+                        <li><span>G.C.E. Advanced Level - 2022</span><br>Ananda Collage Colombo</li>
+                        <li><span>G.C.E. Ordinary Level - 2019</span><br>Dharmapala Vidyalaya Pannipitiya</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------------Services----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Unlock your online potential with our expert web development service - creating powerful, 
+                    responsive, and visually stunning websites that drive success.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h2>Tutoring</h2>
+                <p>Refine your skills in ICT with my personalized tutoring. Gain clarity, confidence, and mastery. Let's succeed together.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-face-smile"></i>
+                <h2>UI/UX Design</h2>
+                <p>Elevate your digital experiences with our captivating UI/UX designs - where aesthetics 
+                    meet seamless functionality.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------Portfolio----------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Programming Languages</h3>
+                    <p>Explore the world of programming languages on our website. Discover comprehensive resources, 
+                        tutorials, and insights into popular languages like Python, JavaScript, Java, C++, and more. 
+                        Master coding concepts, build projects, and advance your programming skills with our expertly 
+                        curated content.</p>
+                    <a href="https://691xtck4llxg2o9mgcnobq.on.drv.tw/Probot/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>To-Do List</h3>
+                    <p>Stay organized and productive with our intuitive to-do list app. Manage tasks, set deadlines, 
+                        and track progress effortlessly. Boost your productivity and accomplish your goals with ease.</p>
+                    <a href="https://691xtck4llxg2o9mgcnobq.on.drv.tw/To-do List/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Quiz App</h3>
+                    <p>Challenge your knowledge with our engaging Quizapp. Test yourself on various topics, 
+                        enjoy fun quizzes, and compete with friends for high scores. Expand your horizons while 
+                        having fun!</p>
+                    <a href="https://691xtck4llxg2o9mgcnobq.on.drv.tw/Quiz App/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://691xtck4llxg2o9mgcnobq.on.drv.tw/Snake Game/
+        " class="button">See More</a>
+
+    </div>
+</div>
+<!-------------------Contact------------------>
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>Hirunthishakya.wmh34@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone-volume"></i>+94 766 501 505</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/hiru.thishakya.7/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/thish.wmh/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/hirun-thishakya-058177210"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.me/qr/KBZSOBZSUH5RE1 "><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=https://twitter.com/Hirun_Thishakya><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <a href="" download class="button button2">Download CV</a>
+            </div>
+            <div class="contact-right">
+            <form name="submit-to-google-sheet" >
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="button button2">Submit</button>
+            </form>
+            <span id="message"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Thish. <i class="fa-solid fa-code"></i> By Hirun Thishakya</p>
+    </div>
+  </div>
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0"
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzIerk5GIQAzvCQv6Q4wgy2ln__z3jkFfUp-nG_Jp-WAhQ2phrKzzHpHKo3lLTLT6bd/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("message")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            message.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                message.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<script>
+    // Wait for the page to load
+    document.addEventListener("DOMContentLoaded", function() {
+        // Find the boot logo container
+        var bootLogoContainer = document.getElementById("boot-logo-container");
+        
+        // Optional: Set the duration (in milliseconds) you want the logo to be visible
+        var displayDuration = 3000;
+        
+        // Hide the boot logo container after the specified duration
+        setTimeout(function() {
+            bootLogoContainer.style.display = "none";
+        }, displayDuration);
+    });
+</script>
+
+<script>
+    function getGreeting() {
+        var currentTime = new Date();
+        var currentHour = currentTime.getHours();
+        var greeting;
+
+        if (currentHour >= 0 && currentHour < 12) {
+            greeting = "Good Morning!";
+        } else if (currentHour >= 12 && currentHour < 17) {
+            greeting = "Good Afternoon!";
+        } else {
+            greeting = "Good Evening!";
+        }
+
+        document.getElementById("greeting").innerHTML = greeting;
+    }
+</script>
+
+
+</body>
+</html>
